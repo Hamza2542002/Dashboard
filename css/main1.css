@@ -1,0 +1,337 @@
+nav ul li:nth-of-type(2){
+    background-color:#eee ;
+}
+.Dashboard .container{
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(3,minmax( calc(100% / 3 - 15px) , 1fr));
+    gap: 15px;
+    padding:20px 10px;
+}
+@media (max-width: 1699px){
+    .Dashboard .container{
+        grid-template-columns: repeat(2,calc(100% / 2 - 8px));
+    }
+}
+@media (max-width: 1200px){
+    .Dashboard .container{
+        grid-template-columns: minmax(150px,1fr);
+    }
+}
+@media (max-width: 300px){
+    .Dashboard{
+        padding: 0;
+    }
+    .Dashboard .container{
+        padding: 10px 0;
+    }
+}
+
+.Dashboard .container .box{
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+}
+
+.Dashboard .container .box header p{
+    color: #9a9a9a;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.Dashboard .container .s-c .text h4{
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.Dashboard .container .s-c .text p{
+    font-size: 13px;
+    color: #9a9a9a;
+}
+.Dashboard .container .s-c .w-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+.Dashboard .container .s-c .w-c input[type="checkbox"] {
+    appearance: none;
+    display: none;
+}
+
+.Dashboard .container .s-c .w-c span{ 
+    width: 75px;
+    height: 31px;
+    border-radius: 15px;
+    background-color: #cccbcb;
+    transition: .4s;
+    display: inline-block;
+    position: relative;
+
+}
+.Dashboard .container .s-c .w-c i{ 
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(12%,-50%);
+    font-size: 25px;
+    color: white;
+    transition: .4s;
+}
+
+
+.Dashboard .container .s-c .w-c input[type="checkbox"]:checked + span{
+    background-color: var(--blue-color);
+}
+.Dashboard .container .s-c .w-c input[type="checkbox"]:checked + span i{
+    left: 58%;
+}
+.Dashboard .container .s-c .w-c  input[type="checkbox"]:checked + span .w::before{
+    content: "\f058";
+}
+
+
+.Dashboard .container .s-c textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 7px;
+    border-color: #ddd;
+    padding: 10px;
+}
+
+
+.Dashboard .container .g-i form div {
+    margin: 13px 0;
+}
+.Dashboard .container .g-i form div p{
+    color: #9a9a9a;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.Dashboard .container .g-i form input{
+    height: 35px;
+    width: 100%;
+    border-radius: 7px;
+    border: 2px solid #ddd;
+    padding-left: 10px;
+}
+
+.Dashboard .container .g-i form .input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Dashboard .container .g-i form .e{
+    width: calc(100% - 70px);
+}
+.Dashboard .container .g-i form .e-i a{
+    color: var(--blue-color);
+    width: 60px;
+}
+
+
+.Dashboard .container .s-i .content .s-c{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 12px;
+}
+.Dashboard .container .s-i .content .s-c:nth-of-type(3){
+    border-bottom: none;
+}
+.Dashboard .container .s-i .content .p-ch a{
+    padding: 5px 10px;
+    background-color: var(--blue-color);
+    color: white;
+    border-radius: 15px;
+}
+.Dashboard .container .s-i .content .f-e input[type="checkbox"] {
+    appearance: none;
+    display: none;
+}
+
+.Dashboard .container .s-i .content .f-e span{ 
+    width: 75px;
+    height: 31px;
+    border-radius: 15px;
+    background-color: #cccbcb;
+    transition: .4s;
+    display: inline-block;
+    position: relative;
+}
+.Dashboard .container .s-i .content i{ 
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(12%,-50%);
+    font-size: 25px;
+    color: white;
+    transition: .4s;
+}
+.Dashboard .container .s-i .content .f-e .f-l .r{ 
+    display: none;
+    border-radius: 50%;
+}
+
+.Dashboard .container .s-i .content .f-e input[type="checkbox"]:checked + span{
+    background-color: var(--blue-color);
+}
+.Dashboard .container .s-i .content .f-e input[type="checkbox"]:checked + span i{
+    left: 58%;
+}
+.Dashboard .container .s-i .content .f-e input[type="checkbox"]:checked + span .w::before{
+    content: "\f058";
+}
+
+.Dashboard .container .s-i .content .d a{
+    padding: 5px 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.Dashboard .container .social-info .content .s-box{
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Dashboard .container .social-info .content .s-box input[type="text"] {
+    border: none;
+    height: 100%;
+    width: calc(100% - 45px);
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+    background-color: #f6f6f6;
+}
+.Dashboard .container .social-info .content .s-box input[type="text"]:focus + i{
+    color: black;
+}
+
+.Dashboard .container .social-info .content .s-box label.i-l {
+    width: 40px;
+    position: relative;
+}
+.Dashboard .container .social-info .content .s-box i{
+    color: #ddd;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+}
+
+
+.Dashboard .container .w-c .content ul{
+    margin-top: 20px;
+}
+.Dashboard .container .w-c .content ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+.Dashboard .container .w-c .content ul li label,
+.Dashboard .container .w-c .content ul li input[type="checkbox"]{
+    cursor: pointer;
+}
+.Dashboard .container .w-c .content ul li label{
+    padding-left: 10px;
+}
+.Dashboard .container .w-c .content ul li input[type="checkbox"]{
+    width:0;
+    height: 0;
+}
+.Dashboard .container .w-c .content ul li input[type="checkbox"]:checked + .checkmark i{
+    transform: rotate(360deg);
+    scale: 1;
+}
+.Dashboard .container .w-c .content ul li input[type="checkbox"]:hover + .checkmark{
+    border-color: var(--blue-color);
+}
+i.fa-solid.fa-square-check {
+    font-size: 19px;
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    color: var(--blue-color);
+    scale: 0;
+    transition: .3s;
+}
+.Dashboard .container .w-c .content ul li .checkmark{
+    border: 2px solid rgb(166, 166, 166);
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+}
+
+
+.Dashboard .container .b-m .content .r-i{
+    margin: 25px 0;
+}
+.Dashboard .container .b-m .content .r-i div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.Dashboard .container .b-m .content .r-i div label{
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.Dashboard .container .b-m .content .r-i div input[type="radio"]{
+    zoom: 1.5;
+    cursor: pointer;
+}
+
+.Dashboard .container .b-m .content .a-m{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Dashboard .container .b-m .content .a-m div{
+    width: calc(100% / 3 - 30px);
+}
+.Dashboard .container .b-m .content .a-m div label{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(206, 206, 206);
+    padding: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.Dashboard .container .b-m .content .a-m div input{
+    appearance: none;
+}
+.Dashboard .container .b-m .content .a-m div input:checked + label{
+    border-color: var(--blue-color);
+}
+.Dashboard .container .b-m .content .a-m div input:checked + label i,
+.Dashboard .container .b-m .content .a-m div input:checked + label p{
+    color: var(--blue-color);
+}
+@media(max-width:760px){
+    .Dashboard .container .b-m .content .a-m{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Dashboard .container .b-m .content .a-m div{
+        width: 100%;
+    }
+    .text {
+        font-size: 13px;
+    }
+}

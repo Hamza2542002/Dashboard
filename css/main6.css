@@ -1,0 +1,198 @@
+
+nav ul li:nth-of-type(7){
+    background-color:#eee ;
+}
+.Dashboard .container{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+@media(max-width:768px){
+    .Dashboard .container{
+        flex-direction: column-reverse;
+    }
+    .Dashboard .container #cont,
+    .Dashboard .container #f-s{
+        width: 100%;
+    }
+    .Dashboard .container #cont{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+@media (max-width: 350px){
+    .Dashboard{
+        padding: 10px 0;
+    }
+    .Dashboard .container{
+        padding: 20px 0;
+    }
+}
+.Dashboard .container .f-static{
+    background-color: white;
+    border-radius: 7px;
+    padding: 15px;
+    width: 260px;
+    height: fit-content;
+}
+.Dashboard .container .f-static .head{
+    margin: 20px 0;
+}
+.Dashboard .container .f-static ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+    border: 1px solid #eee;
+    gap: 15px;
+    border-radius: 7px;
+    padding: 12px 10px;
+}
+.Dashboard .container .f-static ul li i{
+    color: var(--blue-color);
+    width: 40px;
+    height: 40px;
+    background-color: #0075ff69;
+    position: relative;
+}
+.Dashboard .container .f-static ul li:nth-of-type(2) i{
+    color: var(--green-color);
+    background-color: #22c55e69;
+}
+.Dashboard .container .f-static ul li:nth-of-type(3) i{
+    color: var(--red-color);
+    background-color: #f4433669;
+}
+.Dashboard .container .f-static ul li:nth-of-type(4) i{
+    color: var(--orange-color);
+    background-color: #f59e0b69;
+}
+.Dashboard .container .f-static ul li i:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Dashboard .container .f-static ul li p{
+    font-size: 15px;
+}
+.Dashboard .container .f-static ul li p:nth-of-type(2){
+    margin-top: 5px;
+    font-size: 13px;
+    color: var(--grey-color);
+}
+.Dashboard .container .f-static ul li .size{
+    font-size: 13px;
+    color: var(--grey-color);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0%,-50%);
+}
+.Dashboard .container .f-static .upload{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    background-color: var(--blue-alt-color);
+    color: white;
+    border-radius: 7px;
+    font-size: 14px;
+    margin: 15px auto;
+}
+.Dashboard .container .f-static .upload:hover {
+    cursor: pointer;
+    background-color: var(--blue-color);
+}
+.Dashboard .container .f-static .upload:hover i{
+    animation: toggle .5s ease-in-out 0s infinite normal forwards;
+}
+@keyframes toggle {
+    0%,
+    100%{
+        transform: translateY(0px);
+    }
+	50%{
+        transform: translateY(-5px);
+    }
+}
+.Dashboard .container .content{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 20px;
+    width: calc(100% - 250px);
+}
+@media(max-width:1700px){
+    .Dashboard .container .content{
+        grid-template-columns: repeat(5,auto);
+    }
+}
+@media(max-width:1560px){
+    .Dashboard .container .content{
+        grid-template-columns: repeat(4,auto);
+    }
+}
+@media(max-width:1400px){
+    .Dashboard .container .content{
+        grid-template-columns: repeat(3,auto);
+    }
+}
+@media(max-width:1200px){
+    .Dashboard .container .content{
+        grid-template-columns: repeat(2,auto);
+    }
+}
+@media(max-width:960px){
+    .Dashboard .container .content{
+        grid-template-columns: 1fr;
+    }
+}
+.Dashboard .container .content .box{
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
+    position: relative;
+}
+.Dashboard .container .content .box:hover .img-h img{
+    transform: rotate(5deg);
+    transition: .3s;
+}
+.Dashboard .container .content .box .dow{
+    color: var(--grey-color);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.Dashboard .container .content .box .img-h{
+    text-align: center;
+    margin-top: 20px;
+}
+.Dashboard .container .content .box .img-h p{
+    font-size: 15px;
+    margin: 10px 0;
+}
+.Dashboard .container .content .box .img-h img{
+    width: 64px;
+    height: 64px;
+}
+.Dashboard .container .content .box > p{
+    font-size: 13px;
+    color: var(--grey-color);
+    padding:10px 0 ;
+    border-bottom: 1px solid #eee;
+}
+.Dashboard .container .content .box .foot{
+    display: flex;
+    justify-content: space-between;
+    color: var(--grey-color);
+    font-size: 14px;
+    padding-top: 10px;
+}
+@media(max-width:350px){
+    .Dashboard .container,
+    .Dashboard .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,106 @@
+nav ul li:nth-of-type(8){
+    background-color:#eee ;
+}
+.Dashboard .container{
+    padding: 25px 10px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax( calc(100% / 3 - 15px) , 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+@media (max-width: 1699px){
+    .Dashboard .container{
+        grid-template-columns: repeat(2,calc(100% / 2));
+    }
+}
+@media (max-width: 1200px){
+    .Dashboard .container{
+        grid-template-columns: minmax(150px,1fr);
+    }
+}
+@media (max-width: 350px){
+    .Dashboard{
+        padding: 0;
+    }
+    .Dashboard .container{
+        padding: 20px 0;
+    }
+}
+.Dashboard .container .box{
+    background-color: white;
+    padding: 20px;
+}
+.Dashboard .container .box .head{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    background-color: var(--green-color);
+    outline: 3px solid var(--green-color);
+    border: 3px solid white;
+}
+.Dashboard .container .basic .head{
+    background-color: var(--blue-color);
+    outline: 2px solid var(--blue-color);
+}
+.Dashboard .container .premium .head{
+    background-color: var(--orange-color);
+    outline: 2px solid var(--orange-color);
+}
+.Dashboard .container .box .head .price{
+    font-size: 40px;
+    font-weight: normal;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+.Dashboard .container .box .head .price::before{
+    content: "$";
+    position: absolute;
+    top: 0px;
+    left: -13px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.Dashboard .container .box ul{
+    margin: 20px 0;
+}
+.Dashboard .container .box ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.Dashboard .container .box ul li .yes{
+    color: var(--green-color);
+}
+.Dashboard .container .box ul li .help{
+    color: var(--grey-color);
+}
+.Dashboard .container .box ul li .no{
+    color: var(--red-color);
+}
+.Dashboard .container .box ul li .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.Dashboard .container .box .confirm{
+    background-color: var(--green-color);
+    color: white;
+    border-radius: 7px;
+    padding: 4px 8px;
+}
+.Dashboard .container .box .confirm:hover{
+    cursor: pointer;
+}
+.Dashboard .container .basic .confirm{
+    background-color: var(--blue-color);
+}
+.Dashboard .container .premium .c-m{
+    color: var(--grey-color);
+    width: fit-content;
+    margin: 0 auto;
+}

@@ -1,0 +1,141 @@
+nav ul li:nth-of-type(4){
+    background-color:#eee ;
+}
+.Dashboard .container{
+    display: grid;
+    grid-template-columns: repeat(3,calc(100% / 3 - 14px));
+    gap: 20px;
+}
+
+@media(max-width : 1700px){
+    .main .Dashboard .container {
+        grid-template-columns: repeat(2,calc(100% / 2 - 10px));
+    }
+}
+@media(max-width : 1290px){
+    .main .Dashboard .container {
+        grid-template-columns: minmax(100%,1fr)
+    }
+}
+
+.Dashboard .container .box{
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+.Dashboard .container .box header h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.Dashboard .container .box header p{
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--grey-color);
+}
+.Dashboard .container .box .peers{
+    margin: 40px 0 20px 0;
+}
+.Dashboard .container .box .peers img{
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -20px;
+    position: relative;
+}
+.Dashboard .container .box .peers img:hover{
+    z-index: 2;
+    cursor: pointer;
+}
+
+.Dashboard .container .box .peers img:nth-of-type(1){
+    margin: 0;
+}
+
+.Dashboard .container .box .tags{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 18px 0;
+    border: 1px solid #eee;
+    border-width: 1px 0;
+}
+.Dashboard .container .box .tags span{
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 13px;
+}
+.Dashboard .container .box .success{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+
+}
+.Dashboard .container .box .success .lev{
+    width: 50%;
+    background-color: #eee;
+    border-radius: 7px;
+    height: 7px;
+    position: relative;
+}
+.Dashboard .container .box .success .lev::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: var(--red-color);
+}
+.Dashboard .container .a-p .success .lev::after{
+    width: 85%;
+    background-color: var(--green-color);
+}
+.Dashboard .container .a-d .success .lev::after{
+    width: 56%;
+    background-color: var(--green-color);
+}
+.Dashboard .container .m-d .success .lev::after{
+    width: 75%;
+    background-color: var(--green-color);
+}
+.Dashboard .container .m-p .success .lev::after{
+    width: 80%;
+    background-color: var(--green-color);
+}
+.Dashboard .container .chat-app:nth-of-type(9) .success .lev::after{
+    width: 95%;
+    background-color: var(--green-color);
+}
+.Dashboard .container .chat-app .success .lev::after{
+    width: 100%;
+    background-color: var(--blue-color);
+}
+.Dashboard .container .box .success .m-l{
+    color: var(--grey-color);
+    position: relative;
+}
+.Dashboard .container .box .success .m-l::before{
+    content: "\24";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-130%,-50%);
+}
+@media (max-width:760px){
+    .main .Dashboard .container .box .tags{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main .Dashboard .container .box .success{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .main .Dashboard .container .box .success .lev{
+        width: 90%;
+    }
+}

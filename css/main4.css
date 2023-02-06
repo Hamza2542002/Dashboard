@@ -1,0 +1,97 @@
+nav ul li:nth-of-type(5){
+    background-color:#eee ;
+}
+.Dashboard .container{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap:20px;
+}
+@media(max-width:1700px){
+    .main .Dashboard .container{
+        grid-template-columns: repeat(4,auto);
+    }
+}
+@media(max-width:1540px){
+    .main .Dashboard .container{
+        grid-template-columns: repeat(3,auto);
+    }
+}
+@media(max-width:1200px){
+    .main .Dashboard .container{
+        grid-template-columns: repeat(2,auto);
+    }
+}
+@media(max-width:890px){
+    .main .Dashboard .container{
+        grid-template-columns: auto;
+    }
+}
+.Dashboard .container .box{
+    border-radius: 10px;
+    background-color: white;
+    border-radius: 7px;
+}
+.Dashboard .container .box .image-h{
+    width: 100%;
+    position: relative;
+}
+.Dashboard .container .box .image-h .cover{
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+.Dashboard .container .box .image-h .team{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+@media(max-width:500px){
+    .Dashboard .container .box .image-h .team{
+        top: 10px;
+        left: 10px;
+        width: 50px;
+        height: 50px;
+    }
+}
+.Dashboard .container .box .text{
+    padding: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+.Dashboard .container .box .text h4{
+    margin-bottom: 15px;
+}
+.Dashboard .container .box .text p{
+    color: var(--grey-color);
+    font-size: 14px;
+    line-height: 1.8;
+}
+.Dashboard .container .box .cource-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size:12px;
+    position: relative;
+}
+.Dashboard .container .box .cource-info span{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 7px;
+    font-size: 13px;
+    color: white;
+    padding: 5px 10px;
+    background-color: var(--blue-color);
+}
+
+.Dashboard .container .box .cource-info div{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--grey-color);
+}
